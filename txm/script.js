@@ -180,17 +180,17 @@ function setUniqueString() {
 
 function createLink(id) {
   let url = encodeURI('http://163inno.github.io/txm/?id=' + id);
-  let url_request = 'https://api-ssl.bitly.com/v3/shorten?access_token='+ API_KEY + '&longUrl=' + url;
-  var xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4)
-    {
-      let url = JSON.parse(xhr.responseText).data.url;
+  // let url_request = 'https://api-ssl.bitly.com/v3/shorten?access_token='+ API_KEY + '&longUrl=' + url;
+  // var xhr = new XMLHttpRequest();
+  // xhr.onreadystatechange = function () {
+  //   if (xhr.readyState == 4)
+  //   {
+  //     let url = JSON.parse(xhr.responseText).data.url;
       document.getElementById("report").innerText += "Visual Report: " + url;
-    }
-  };
-  xhr.open('GET', url_request, true);
-  xhr.send(null);
+  //   }
+  // };
+  // xhr.open('GET', url_request, true);
+  // xhr.send(null);
   return;
 }
 
