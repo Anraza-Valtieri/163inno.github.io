@@ -1,0 +1,88 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  position: relative;
+  font-family: helvetica;
+  background-color: #F7F7FF;
+}
+
+h1 {
+  font-size: 2vh;
+}
+
+#wrapper {
+   background-color: #BDD5EA;
+   text-align: center;
+   font-size: 3vw;
+   font-weight: bold;
+}
+
+.ACAB {
+  display: grid;
+  grid-template-columns: 1fr repeat(8, 3fr) 1fr;
+  font-size: 2vh;
+}
+
+.TxM {
+   display: grid;
+   height: 97vw;
+   font-size: 2vh;
+}
+
+p {
+  font-size: 1.5vh;
+}
+
+#copy, #reset, #submit {
+    height: 7vh;
+    width: 25vw;
+    border: none;
+    margin: 2px;
+    font-size: 2.5vh;
+    background-color: #999999;
+    border-radius: 2vh;
+}
+
+.report-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Report Reset"
+    "Report Code"
+    "Report Copy";
+}
+.Report { grid-area: Report; }
+.Reset { grid-area: Reset; }
+.Copy { grid-area: Copy; }
+.Code { grid-area: Code; }
+
+textarea {
+  width: 100%;
+}
+
+.green {
+  height: 11.5vw;
+  width: 11.5vw;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 5vw;
+  background-color: #58eb34;
+  border-radius: 30%;
+}
+
+.red {
+    height: 11.5vw;
+    width: 11.5vw;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 5vw;
+    background-color: #a84432;
+    border-radius: 30%;
+}
